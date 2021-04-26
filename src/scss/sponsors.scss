@@ -1,0 +1,74 @@
+@import "./_variables.scss";
+@import "./global";
+
+.vendors {
+  padding-top: 600px;
+
+  .Colabs {
+    margin-top: 15.5vw;
+    max-width: 1200px;
+    padding: 30px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    .ColabsName {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 60px;
+        font-weight: 200;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center !important;
+        padding-bottom: 1rem !important;
+        @include mobile8 {
+          font-size: 45px;
+        }
+      }
+    }
+    .hellas {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10rem;
+      @include mobile8 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    .nya {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3rem;
+      @include mobile8 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    .avegerinos {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3rem;
+      @include mobile8 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    .pelion {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3rem;
+      @include mobile8 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}

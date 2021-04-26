@@ -1,0 +1,51 @@
+@import "./_variables.scss";
+@import "./global";
+
+.seeyou {
+  margin-top: 15.5vw;
+  margin-bottom: 15.5vw;
+  max-width: 1200px;
+  padding: 30px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  .footer {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    li {
+      list-style: none;
+      a {
+        position: relative;
+        z-index: 999;
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 70px;
+        @include mobile8 {
+          font-size: 43px;
+        }
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 20px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: $orange;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+      a:hover:before {
+        visibility: visible;
+        z-index: 1;
+        width: 100%;
+      }
+    }
+  }
+}

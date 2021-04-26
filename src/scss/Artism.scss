@@ -1,0 +1,72 @@
+@import "./_variables.scss";
+@import "./global";
+
+.paint {
+  height: 150vh;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #fff;
+
+  .asp {
+    display: flex;
+    justify-content: center;
+    background: white;
+
+    img {
+      margin-top: -150px;
+      @include mobile7 {
+        width: 100%;
+      }
+    }
+  }
+  .all {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 28px;
+    margin: 0 auto;
+    background: white;
+  }
+  .colors {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 300px;
+
+    .second {
+      img {
+        @include mobile7 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .first {
+    margin-top: 270px;
+    max-width: 1200px;
+    max-width: 400px;
+    padding: 30px;
+    background: white;
+    @include mobile7 {
+      max-width: 100%;
+    }
+    h2 {
+      font-weight: 200;
+      font-size: 70px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic !important;
+      color: black;
+      background: #fff;
+      @include mobile7 {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    p {
+      color: black;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      background: white;
+    }
+  }
+}

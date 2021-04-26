@@ -1,0 +1,14 @@
+@import "./_variables.scss";
+@import "./global";
+
+footer {
+  justify-content: center;
+  padding: 30px;
+  @include flexCenter();
+
+  h2 {
+    font-family: $fontBold;
+    font-weight: 100;
+    font-size: 15px;
+  }
+}

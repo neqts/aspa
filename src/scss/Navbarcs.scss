@@ -1,0 +1,79 @@
+@import "./_variables.scss";
+@import "./global";
+
+body {
+  font-family: Raleway, sans-serif;
+  background-color: #040101;
+  color: #fff;
+}
+
+nav {
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  top: 0;
+  @include flexCenter();
+  justify-content: space-between;
+  @include mobile {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .logo {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  img {
+    width: 40px;
+  }
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: $font;
+
+    a {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 4px;
+      font-family: $font;
+    }
+
+    a:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover:before {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+}
+.subpage {
+  list-style: none;
+  display: flex;
+}
+
+header {
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  background-color: #040101;
+}

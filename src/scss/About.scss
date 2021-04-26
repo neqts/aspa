@@ -1,0 +1,109 @@
+@import "./_variables.scss";
+@import "./global";
+
+.header__text {
+  padding-left: 15vw;
+  padding-right: 5vw;
+  margin-top: 10%;
+  height: 72vh;
+  max-width: 1500px;
+
+  p.About {
+    line-height: 1.5;
+    text-align: left;
+    font-size: $size;
+    font-weight: $bold;
+    font-family: $fontBold;
+
+    @include mobile4 {
+      font-size: 45px;
+    }
+    @include mobile5 {
+      font-size: 35px;
+    }
+    @include mobile6 {
+      font-size: 28px;
+    }
+  }
+  .rotate {
+    transform: rotate(270deg);
+    width: auto;
+    display: absolute;
+    font-family: monospace;
+    margin: 0;
+    width: 400px;
+    font-size: 20px;
+    margin-left: -290px;
+    position: fixed;
+    margin-top: 150px;
+    letter-spacing: 5px;
+    padding: 0;
+  }
+  .underline {
+    width: 100.6%;
+    height: 2px;
+    background-color: $orange;
+  }
+  .social-left {
+    width: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 90px;
+    right: auto;
+    z-index: 10;
+    @include mobile3 {
+      display: none;
+    }
+
+    p {
+      transform: rotate(270deg);
+      font-family: monospace;
+      letter-spacing: 5px;
+      width: 400px;
+      margin-left: -180px;
+      font-size: 20px;
+      margin-bottom: 280px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+
+      li {
+        a {
+          padding: 15px;
+          display: inline-block;
+          text-decoration: none;
+          text-decoration-skip-ink: auto;
+          color: inherit;
+          position: relative;
+          transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          cursor: pointer;
+          i {
+            font-size: 15px;
+
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+div.social-left > ul > li:nth-child(4) > a {
+  padding-bottom: 40px;
+}
+
+div.social-left > ul > li > a:hover > i {
+  transform: translate(0px, -5px);
+  color: $orange;
+  transition: all 0.25s;
+}
